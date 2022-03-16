@@ -21,7 +21,7 @@ ul {
 }
 .nav {
     height: 100px;
-    opacity: 0.0;
+    opacity: 0.2;
     position: fixed;
     top: 0;
     width: 100%;
@@ -32,7 +32,7 @@ ul {
 }
 @keyframes navHover {
     0% {
-        opacity: 0.0;
+        opacity: 0.2;
     }
     100% {
         opacity: 1;
@@ -88,7 +88,6 @@ ul {
 }
 .links-main {
     margin-top: 150px;
-    margin-bottom: 200px;
     margin-left: 10px;
     margin-right: 10px;
 }
@@ -98,15 +97,34 @@ ul {
     align-items: center;
     -webkit-box-align: center;
     justify-content: center;
+    flex-direction: column;
+    margin-bottom: 150px;
 }
 .links-link a svg {
     width: 100px;
     height: 100px;
+    margin-bottom: 10px;
 }
 .links-link a svg:hover {
     fill: #2B2D42;
 }
+.links-link h2 {
+    color: #8D99AE;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+}
+.links-link p {
+    color: #8D99AE;
+    font-size: 20px;
+    text-align: center;
+}
 .links-header {
     color: #EF233C;
     text-align: center;
+}
+.footer {
+    width: 100%;
+    height: 100px;
+    background-color: #EDF2F4;
 }

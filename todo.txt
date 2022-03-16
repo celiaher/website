@@ -1,0 +1,5 @@
+finish:
+-navbar
+-about us page
+-about robot page
+-downloads page
