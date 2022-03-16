@@ -1,0 +1,112 @@
+body {
+    background-color: #EDF2F4;
+}
+a:link { 
+    text-decoration: none; 
+}
+a:visited { 
+    text-decoration: none; 
+}
+a:active { 
+    text-decoration: none; 
+}
+br {
+    -webkit-touch-callout: none; 
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+ul {
+    list-style: none;
+}
+.nav {
+    height: 100px;
+    opacity: 0.0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #2B2D42;
+}
+.nav-hover {
+    animation: navHover 0.3s normal forwards;
+}
+@keyframes navHover {
+    0% {
+        opacity: 0.0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.nav-items li {
+    margin-top: 25px;
+    margin-bottom: 50px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.nav-title {
+    color: #EF233C;
+    font: 30px;
+}
+.nav-title:hover {
+    color: #EDF2F4;
+}
+.hero {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(imgs/robot.jpg);
+    background-position: 50% 50%;
+    height: 1000px;
+    display: block;
+}
+.hero-text {
+    font-size: 70px;
+    padding-top: 300px;
+    text-align: center;
+    color: #EDF2F4;
+}
+.hero-text:hover {
+    animation: heroHover 0.5s normal forwards;
+}
+@keyframes heroHover {
+    0% {
+        text-shadow: 0px 0px hsl(0, 0, 0);
+    }
+    100% {
+        text-shadow: 5px 5px #EF233C;
+    }
+}
+.hero-desc {
+    font-size: 50px;
+    text-align: center;
+    color: #EDF2F4;
+}
+.hero-slogan {
+    font-size: 40px;
+    text-align: center;
+    color: #EDF2F4;
+}
+.links-main {
+    margin-top: 150px;
+    margin-bottom: 200px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.links-link {
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-align: center;
+    justify-content: center;
+}
+.links-link a svg {
+    width: 100px;
+    height: 100px;
+}
+.links-link a svg:hover {
+    fill: #2B2D42;
+}
+.links-header {
+    color: #EF233C;
+    text-align: center;
+}
