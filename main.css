@@ -23,24 +23,44 @@ ul {
     position: fixed;
     width: 100%;
     background-color: #2B2D42;
+    margin: 0;
 }
 .nav-item {
     padding-bottom: 30px;
 }
 .nav-title {
+    margin-left: 10px;
+    margin-top: 10px;
     color: #EF233C;
     font: 30px;
+    width: fit-content;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 .nav-title:hover {
     color: #EDF2F4;
+}
+.nav-link {
+    margin: 0;
+    padding: 0;
 }
 li {
     float: left;
 }
 h4 {
+    margin-top: 20px;
     color: #EDF2F4;
     font-size: 30px;
-    text-align: center;
+    text-align: right;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 h4:hover {
     color: #EF233C;
@@ -58,6 +78,9 @@ h4:hover {
     font-size: 70px;
     text-align: center;
     color: #EDF2F4;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
 }
 .hero-text:hover {
     animation: heroHover 0.5s normal forwards;
@@ -137,10 +160,7 @@ p {
     text-align: center;
     fill: #2B2D42;
 }
-.mode-light:hover {
-    fill: #EF233C;
-}
-.mode-dark:hover {
+.mode-light:hover + .mode-dark:hover {
     fill: #EF233C;
 }
 .mode-dark {
@@ -154,4 +174,9 @@ p {
     color: #2B2D42;
     text-align: center;
     margin-top: 20px;
+}
+@media only screen and (max-width: 991px) {
+    .nav-item {
+        padding-bottom: 10px;
+    }
 }
