@@ -1,4 +1,6 @@
 finish:
 -about us page
 -about robot page
--downloads page
+
+bugs:
+-hover not working with mode-icon
