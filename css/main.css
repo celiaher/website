@@ -70,7 +70,7 @@ h4:hover {
 .hero {
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url(imgs/robot.jpg);
+    background-image: url(../imgs/robot.jpg);
     background-position: 50% 50%;
     height: 1000px;
     display: block;
@@ -164,11 +164,8 @@ p {
     text-align: center;
     fill: #2B2D42;
 }
-.mode-light:hover + .mode-dark:hover {
-    fill: #EF233C;
-}
 .mode-dark {
-    float: left; 
+    float: left;
     margin-left: 25%; 
     margin-top: 15px; 
     text-align: center;
