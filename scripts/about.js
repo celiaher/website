@@ -5,8 +5,9 @@ function darkClick()
     $(".footer-line").css("stroke", "#2B2D42");
     $("#copyright").css("color", "#2B2D42");
     $(".mode-dark").attr("onclick", "lightClick();");
-    $(".mode-dark").attr("class", "mode-light bi bi-cloud-moon");
+    $(".mode-dark").attr("class", "mode-light col-lg-6");
     $("h2").css("color", "#2B2D42");
+    $("h3").css("color", "#2B2D42");
     $("p").css("color", "#2B2D42");
 }
 function lightClick()
@@ -16,8 +17,9 @@ function lightClick()
     $(".footer-line").css("stroke", "#EDF2F4");
     $("#copyright").css("color", "#EDF2F4");
     $(".mode-light").attr("onclick", "darkClick();");
-    $(".mode-light").attr("class", "mode-dark bi bi-cloud-moon");
+    $(".mode-light").attr("class", "mode-dark col-lg-6");
     $("h2").css("color", "#EDF2F4");
+    $("h3").css("color", "#EDF2F4");
     $("p").css("color", "#EDF2F4");
 }
 document.getElementById("copyright").innerText += ` ${new Date().getFullYear()}`;

@@ -1,6 +1,0 @@
-finish:
--about us page
--about robot page
-
-bugs:
--hover not working with mode-icon

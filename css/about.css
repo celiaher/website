@@ -51,10 +51,13 @@ h4:hover {
 li {
     float: left;
 }
+.about-us {
+    padding-top: 150px
+}
 h2 {
     text-align: center;
-    margin-bottom: 40px;
     font-size: 40px;
+    padding-bottom: 20px;
     color: #2B2D42;
 }
 h4 {
@@ -72,10 +75,17 @@ h4 {
 }
 p {
     text-align: center;
-    margin-bottom: 50px;
-    margin-left: 5%;
-    margin-right: 5%;
+    padding-bottom: 50px;
+    padding-left: 5%;
+    padding-right: 5%;
     font-size: 20px;
+    color: #2B2D42;
+}
+h3 {
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 10px;
+    font-size: 35px;
     color: #2B2D42;
 }
 .footer {
@@ -86,15 +96,11 @@ p {
     margin: 0;
 }
 .mode-light {
-    float: left; 
-    margin-left: 25%; 
     margin-top: 15px; 
     text-align: center;
     fill: #2B2D42;
 }
 .mode-dark {
-    float: left;
-    margin-left: 25%; 
     margin-top: 15px; 
     text-align: center;
     fill: #EDF2F4;
@@ -103,4 +109,12 @@ p {
     color: #2B2D42;
     text-align: center;
     margin-top: 20px;
+}
+@media only screen and (max-width: 991px) {
+    .nav-item {
+        padding-bottom: 10px;
+    }
+    .about-us {
+        padding-top: 200px
+    }
 }

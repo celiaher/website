@@ -158,15 +158,11 @@ p {
     margin: 0;
 }
 .mode-light {
-    float: left; 
-    margin-left: 25%; 
     margin-top: 15px; 
     text-align: center;
     fill: #2B2D42;
 }
 .mode-dark {
-    float: left;
-    margin-left: 25%; 
     margin-top: 15px; 
     text-align: center;
     fill: #EDF2F4;
