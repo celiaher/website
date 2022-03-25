@@ -7,7 +7,7 @@ function darkClick()
     $("#copyright").css("color", "#2B2D42");
     $(".links-svg-dark").attr("class", "links-svg-light");
     $(".mode-dark").attr("onclick", "lightClick();");
-    $(".mode-dark").attr("class", "mode-light bi bi-cloud-moon");
+    $(".mode-dark").attr("class", "mode-light col-lg-6");
 }
 function lightClick()
 {
@@ -18,6 +18,6 @@ function lightClick()
     $("#copyright").css("color", "#EDF2F4");
     $(".links-svg-light").attr("class", "links-svg-dark");
     $(".mode-light").attr("onclick", "darkClick();");
-    $(".mode-light").attr("class", "mode-dark bi bi-cloud-moon");
+    $(".mode-light").attr("class", "mode-dark col-lg-6");
 }
 document.getElementById("copyright").innerText += ` ${new Date().getFullYear()}`;
