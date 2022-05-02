@@ -23,69 +23,66 @@
                 </a>
             </div>
             <div class="col-lg-4 nav-item">
-                <a class="nav-links" href="#21-22">
+                <a class="nav-links" href="#scroll">
                     <h4>Freight Frenzy (2021-22)</h4>
                 </a>
             </div>
         </div>
-        <section>
+        <section class="text">
             <h2 class="about-us">About Us</h2>
             <p> 
-                We are Niskayuna High School's Robotics team, the RoboWarriors. 
-                As of now, the RoboWarriors meet from 3:15-4:15pm on Fridays in room F136 (Tech room, last room). 
-                We participate in competitions part of First Robotics' First Tech Challenge (FTC). 
-                During our meetings, we work on our robot and prepare for competitions. 
-                Within the team there are subteams who specialize in coding, building, or authoring the engineering notebook -
-                all spending their time working on outlined tasks. 
+                &emsp;We are Niskayuna High School's Robotics team, the RoboWarriors. As of now, the RoboWarriors meet from 3:15-4:15pm on Fridays in room F136 (Tech room, last room). We participate in competitions part of First Robotics' First Tech Challenge (FTC). During our meetings, we work on our robot and prepare for competitions. Within the team there are subteams who specialize in coding, building, or authoring the engineering notebook - all spending their time working on outlined tasks.
             </p>
-        </section>
-        <section>
-            <h2 id="21-22" style="padding-top: 100px;">Freight Frenzy (2021-22)</h2>
+            <div id="scroll"></div>
+            <h2 style="padding-top: 100px;">Freight Frenzy (2021-22)</h2>
+            <h3 id="21-22"class="info-section">Outreach</h3>
             <p>
-                For the task of grabbing and elevating various objects above the field, we opted
-                for the use of a claw and linear slides. Even though we encountered initial problems,
-                our decision eventually panned out
-                as it allowed for better movement and competitive ability.
+                &emsp;Outreach is an important factor when it comes to scoring the engineering notebook of a First Tech Challenge team. A large number of teams that obtain a good score on their engineering notebook have participated in a significant amount of community service such as volunteering at food banks, donating to charitable organizations, and volunteering at school fundraisers. It is very important to participate in many different kinds of outreach activities to show that a team is dedicated to promoting FIRST Robotics and serving the community in a helpful manner.
             </p>
-            <h3>Autonomous</h3>
             <p>
-                Information about autonomous.
+                &emsp;This year the Niskayuna Robowarriors took part in a variety of outreach activities some of which being that we helped run the local middle school’s SeaPerch underwater robotics competition, some of our members presented to the Women in STEM club about women in robotics, and we’ve set up an Instagram account to promote FIRST Robotics, network with other FIRST Robotics teams, and to help others find and support our team. Furthermore, our team had planned lots more community service activities, one of which being that our team will have a table at our district’s community fair, Niska-Day.
             </p>
-            <h3>Navigation</h3>
             <p>
-                Information about navigation.
+                &emsp;As expressed, outreach is a major part in scoring the engineering notebook which makes it a top priority for the Niskayuna Robo Warriors. Because of this, our robotics team has placed heavy emphasis on doing outreach projects in the community, at Niskayuna High School, and online. 
             </p>
-            <h3>Barcode Scanning</h3>
+            <h3 class="info-section">Autonomous</h3>
             <p>
-                Information about barcode scanning.
+                &emsp;For navigation we needed to hard-code paths into the robot, but add easy configurability. To achieve this, we created an <b>ArrayList</b> of <b>Position</b> objects contained in a class labeled <b>AutonomousPaths</b>. Inside of <b>OpMode</b>, a path was picked using an option menu from the robot-controlling phone. We also marked certain positions as positions of interest (POIs), at which the robot would stop and do something. Additionally, we created a high-level method named <b>travelToNextPOI</b>, that would start a continuous strafe while rotating to assume each position for the robot until it reached the next position marked as POI.
             </p>
-            <h3>Claw</h3>
+            <h3 class="info-section">Functionality</h3>
             <p>
-                Information about the claw.
+                &emsp;For the task of grabbing and elevating various objects above the field, we opted for the use of a claw and linear slides. Even though we encountered initial problems, our decision eventually panned out as it allowed for better movement and competitive ability.
             </p>
-            <h3>Linear Slides</h3>
+            <h3 class="info-section">Programming</h3>
             <p>
-                Information about the linear slides.
+                &emsp;For our programming needs, we utilized Java and the FTC SDK along with IntelliJ IDEA as our IDE. We organized our code into a high-level class named <b>RobotManager</b> to encapsulate all of the robot’s functionality. We wrote two <b>OpModes</b>: one for the autonomous period, and the other for teleoperation. Each would call methods inside <b>RobotManager</b> to communicate with the low-level hardware of the robot. We maintained a consistent codebase with documentation throughout the methods and fields to aid communication across the programming team.
             </p>
-            <h3>Positioning</h3>
+            <h3 class="info-section">CAD</h3>
             <p>
-                Information about positioning.
+                &emsp;Having a solid CAD portfolio was another critical component of our engineering notebook. This is because CAD gave us the ability to visualize all of the robot parts on a screen before putting them together. Our CAD files were created using Autodesk Inventor. These files were created to serve as a record of the robot and provide a good visual representation that could be showcased to others. The CAD team also designed a team shipping element (capstone), but the vast majority of our work was creating the robot itself in CAD.
             </p>
-            <h3>Printing Parts</h3>
             <p>
-                Information about printing parts.
+                &emsp;In brief, CAD (specifically Autodesk Inventor), was used to create a large portion of our engineering notebook. Additionally, Inventor was also utilized to provide a quality visual representation that could be used when introducing our robots to others.
             </p>
-            <h3>Game Strategy</h3>
+            <h3 class="info-section">Engineering Notebook</h3>
             <p>
-                Information about the game strategy.
+                &emsp;An engineering notebook is a document that gives a high-level overview of the design process for a certain product. Producing an informative, well written, and highly detailed engineering notebook is a crucial aspect of the FTC competition and the engineering design process in general. 
             </p>
-            <h3>Engineering Notebook</h3>
             <p>
-                Information about the engineering notebook.
+                &emsp;Our engineering notebook covers every aspect from manufacturing the robot to the thought process behind all of the robot’s signature features. Additionally, the notebook includes information about the team, outreach, and a section where the team reflected on how the robot could be improved. Furthermore, it contains several failed iterations of the robot such as mechanical design failures and code that didn’t function properly. Since we decided to include these failures in our notebook, we also included a section about how we overcame these challenges to shed light on our success as a team.
             </p>
-            <h3>Overcoming Challenges</h3>
             <p>
-                Information about overcoming challenges.
+                &emsp;A few things that stood out about our engineering notebook were the highly organized format, the variety of graphs and drawings depicting different parts of the robot and design process, and the samples of code included in our programming section of the notebook. These aspects of our notebook helped our team stand out to the FTC judges and helped us win a “Think” award at the qualifying competition which advanced us to the regional competition.
+            </p>
+            <p>
+                &emsp;All in all, the engineering notebook is an engineer’s best friend when it comes to the organization of ideas, documentation of the design process, and standing out from other engineers. Producing an informative, well written, and highly detailed engineering notebook is a notable item of importance to the FTC judges and the engineering design process in general. 
+            </p>
+            <h3 class="info-section">Overcoming Challenges</h3>
+            <p>
+                &emsp;When we first designed a frame for the robot, it was about 0.5” too wide to fit the size constraints of 18” x 13.5” x 18”. This prompted us to create a frame a little smaller than expected, but strong enough to comfortably carry all of the heavy components. A related issue with sizing came when in our first competition, we found that the carousel wheel protruding from the rear side makes it difficult to enter the shared shipping hub area. Our solution was to move the carousel wheel housing farther back into the frame, which saved us 1” of space.
+            </p>
+            <p>
+                &emsp;Another problem we faced was more on the technical side. School administrators were unwilling to install Git because it violated New York Education Law Section 2-D, so we needed to improvise. Our first proposed solution was to use bootable flash drives with Linux installed, but that proved infeasible as a permanent fix. A compromise we reached with the technology department was to install IntelliJ IDEA on the computers, and have us use flash drives with PortableGit. We would then push any changes from the drives to the repository at home, as we were also unallowed to login to Github on school computers.
             </p>
         </section>
         <section>
