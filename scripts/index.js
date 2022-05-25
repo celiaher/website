@@ -1,3 +1,12 @@
+const theme = window.localStorage.getItem("theme");
+if (theme == null)
+{
+    window.localStorage.setItem("theme", "light");
+}
+else if (theme == "dark")
+{
+    lightClick();
+}
 function darkClick()
 {
     $(".footer").css("background-color", "#EDF2F4");
@@ -8,6 +17,7 @@ function darkClick()
     $(".links-svg-dark").attr("class", "links-svg-light");
     $(".mode-dark").attr("onclick", "lightClick();");
     $(".mode-dark").attr("class", "mode-light col-lg-6");
+    window.localStorage.setItem("theme", "light");
 }
 function lightClick()
 {
@@ -19,5 +29,6 @@ function lightClick()
     $(".links-svg-light").attr("class", "links-svg-dark");
     $(".mode-light").attr("onclick", "darkClick();");
     $(".mode-light").attr("class", "mode-dark col-lg-6");
+    window.localStorage.setItem("theme", "dark");
 }
 document.getElementById("copyright").innerText += ` ${new Date().getFullYear()}`;
