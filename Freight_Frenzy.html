@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html style="scroll-behavior: smooth;">
+    <head>
+        <title>RoboWarriors</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="css/about.css">
+        <link href="./imgs/Nisky RoboWarriors Logo.png" rel="icon">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <meta property="og:type" content="website"/>
+        <meta property="og:url" content="https://niskayuna-robowarriors.github.io/website/"/>
+        <meta property="og:title" content="Niskayuna RoboWarriors"/>
+        <meta property="og:description" content="The soon-to-be best robotics team on the globe, the Niskayuna RoboWarriors."/>
+        <meta property="og:image" content="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.classcreator.com%2F000%2Ftemplate_media%2F375A6E24-ECF4-BBD7-B9606A1EAD405F79.png&f=1&nofb=1"/>
+        <meta property="og:image:width" content="1200"/>
+        <meta property="og:image:height" content="1200"/>
+        <meta name="theme-color" content="#2B2D42"/>
+    </head>
+    <body>
+        <div class="row nav">
+            <table align="center" width="100%">
+            <tr>
+            <div class="col-lg-4">
+                    <td width="35%"><h1 class="nav-title"><b><a class="nav-title" href="index.html">Niskayuna RoboWarriors!</a></b></h1></td>
+                </a>
+            </div>
+            <div class="col-lg-4 nav-item">
+                <td width="30%"><center><a class="nav-links" href="#scroll"><h4>Freight Frenzy (2021-2022)</center></h4></td>
+            </a>
+        </div>
+        <!-- Dropdown Menu of Past Robots -->
+        <head>
+        <td width="36%"><meta name="viewport" content="width=device-width, initial-scale=1">
+        <div class="dropdown col-lg-4 nav-item" style="float:right; right: 20px; top: 20px;">
+            <button class="dropbtn">Robots from Other Years</button>
+                <div class="dropdown-content">
+                    <a href="PowerPlay.html">PowerPlay (2022 - 2023) (Current)</a>
+                    <a href="Freight_Frenzy.html">Freight Frenzy (2021 - 2022)</a>
+                    <a href="Skytone.html">Skytone (2019 - 2020)</a>
+                    <a href="Rover_Ruckus.html">Rover Ruckus (2018 - 2019)</a>
+                    <a href="Relic_Recovery.html">Relic Recovery (2017 - 2018)</a>
+            </div></td>
+</div></head><body></table></tr></div></head></div></div>
+            
+        </div>
+        <section class="text">
+            <h2 class="about-us">About Us</h2>
+            <p> 
+                &emsp;We are Niskayuna High School's Robotics team, the RoboWarriors. As of now, the RoboWarriors meet from 3:15-4:15pm on Fridays in room F136 (Tech room, last room) We participate in competitions part of First Robotics' First Tech Challenge (FTC). During our meetings, we work on our robot and prepare for competitions. Within the team there are subteams who specialize in coding, building, or authoring the engineering notebook - all spending their time working on outlined tasks.
+            </p>
+            <div id="scroll"></div>
+            <br>
+            <h2 style="padding-top: 100px;"><b>Freight Frenzy (2021-22)</b></h2>
+            <h3 id="21-22"class="info-section">Outreach</h3>
+            <p>
+                &emsp;Outreach is an important factor when it comes to scoring the engineering notebook of a First Tech Challenge team. A large number of teams that obtain a good score on their engineering notebook have participated in a significant amount of community service such as volunteering at food banks, donating to charitable organizations, and volunteering at school fundraisers. It is very important to participate in many different kinds of outreach activities to show that a team is dedicated to promoting FIRST Robotics and serving the community in a helpful manner.
+            </p>
+            <p>
+                &emsp;This year the Niskayuna Robowarriors took part in a variety of outreach activities some of which being that we helped run the local middle school’s SeaPerch underwater robotics competition, some of our members presented to the Women in STEM club about women in robotics, and we’ve set up an Instagram account to promote FIRST Robotics, network with other FIRST Robotics teams, and to help others find and support our team. Furthermore, our team had planned lots more community service activities, one of which being that our team will have a table at our district’s community fair, Niska-Day.
+            </p>
+            <p>
+                &emsp;As expressed, outreach is a major part in scoring the engineering notebook which makes it a top priority for the Niskayuna Robo Warriors. Because of this, our robotics team has placed heavy emphasis on doing outreach projects in the community, at Niskayuna High School, and online. 
+            </p>
+            <h3 class="info-section">Autonomous</h3>
+            <p>
+                &emsp;For navigation we needed to hard-code paths into the robot, but add easy configurability. To achieve this, we created an <b>ArrayList</b> of <b>Position</b> objects contained in a class labeled <b>AutonomousPaths</b>. Inside of <b>OpMode</b>, a path was picked using an option menu from the robot-controlling phone. We also marked certain positions as positions of interest (POIs), at which the robot would stop and do something. Additionally, we created a high-level method named <b>travelToNextPOI</b>, that would start a continuous strafe while rotating to assume each position for the robot until it reached the next position marked as POI.
+            </p>
+            <h3 class="info-section">Functionality</h3>
+            <p>
+                &emsp;For the task of grabbing and elevating various objects above the field, we opted for the use of a claw and linear slides. Even though we encountered initial problems, our decision eventually panned out as it allowed for better movement and competitive ability.
+            </p>
+            <h3 class="info-section">Programming</h3>
+            <p>
+                &emsp;For our programming needs, we utilized Java and the FTC SDK along with IntelliJ IDEA as our IDE. We organized our code into a high-level class named <b>RobotManager</b> to encapsulate all of the robot’s functionality. We wrote two <b>OpModes</b>: one for the autonomous period, and the other for teleoperation. Each would call methods inside <b>RobotManager</b> to communicate with the low-level hardware of the robot. We maintained a consistent codebase with documentation throughout the methods and fields to aid communication across the programming team.
+            </p>
+            <h3 class="info-section">CAD</h3>
+            <p>
+                &emsp;Having a solid CAD portfolio was another critical component of our engineering notebook. This is because CAD gave us the ability to visualize all of the robot parts on a screen before putting them together. Our CAD files were created using Autodesk Inventor. These files were created to serve as a record of the robot and provide a good visual representation that could be showcased to others. The CAD team also designed a team shipping element (capstone), but the vast majority of our work was creating the robot itself in CAD.
+            </p>
+            <p>
+                &emsp;In brief, CAD (specifically Autodesk Inventor), was used to create a large portion of our engineering notebook. Additionally, Inventor was also utilized to provide a quality visual representation that could be used when introducing our robots to others.
+            </p>
+            <h3 class="info-section">Engineering Notebook</h3>
+            <p>
+                &emsp;An engineering notebook is a document that gives a high-level overview of the design process for a certain product. Producing an informative, well written, and highly detailed engineering notebook is a crucial aspect of the FTC competition and the engineering design process in general. 
+            </p>
+            <p>
+                &emsp;Our engineering notebook covers every aspect from manufacturing the robot to the thought process behind all of the robot’s signature features. Additionally, the notebook includes information about the team, outreach, and a section where the team reflected on how the robot could be improved. Furthermore, it contains several failed iterations of the robot such as mechanical design failures and code that didn’t function properly. Since we decided to include these failures in our notebook, we also included a section about how we overcame these challenges to shed light on our success as a team.
+            </p>
+            <p>
+                &emsp;A few things that stood out about our engineering notebook were the highly organized format, the variety of graphs and drawings depicting different parts of the robot and design process, and the samples of code included in our programming section of the notebook. These aspects of our notebook helped our team stand out to the FTC judges and helped us win a “Think” award at the qualifying competition which advanced us to the regional competition.
+            </p>
+            <p>
+                &emsp;All in all, the engineering notebook is an engineer’s best friend when it comes to the organization of ideas, documentation of the design process, and standing out from other engineers. Producing an informative, well written, and highly detailed engineering notebook is a notable item of importance to the FTC judges and the engineering design process in general. 
+            </p>
+            <h3 class="info-section">Overcoming Challenges</h3>
+            <p>
+                &emsp;When we first designed a frame for the robot, it was about 0.5” too wide to fit the size constraints of 18” x 13.5” x 18”. This prompted us to create a frame a little smaller than expected, but strong enough to comfortably carry all of the heavy components. A related issue with sizing came when in our first competition, we found that the carousel wheel protruding from the rear side makes it difficult to enter the shared shipping hub area. Our solution was to move the carousel wheel housing farther back into the frame, which saved us 1” of space.
+            </p>
+            <p>
+                &emsp;Another problem we faced was more on the technical side. School administrators were unwilling to install Git because it violated New York Education Law Section 2-D, so we needed to improvise. Our first proposed solution was to use bootable flash drives with Linux installed, but that proved infeasible as a permanent fix. A compromise we reached with the technology department was to install IntelliJ IDEA on the computers, and have us use flash drives with PortableGit. We would then push any changes from the drives to the repository at home, as we were also unallowed to login to Github on school computers.
+            </p>
+        </section>
+        <section>
+            <div class="footer">
+                <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="5">
+                    <line class="footer-line" x1="5%" y1="0" x2="95%" y2="0" style="stroke:#2B2D42; stroke-width: 2;"></line>
+                </svg>
+                <div class="row">
+                    <svg xmlns="http://www.w3.org/2000/svg" onclick="lightClick();" width="32" height="32" class="mode-light col-lg-6" viewBox="0 0 16 16">
+                        <path d="M7 8a3.5 3.5 0 0 1 3.5 3.555.5.5 0 0 0 .625.492A1.503 1.503 0 0 1 13 13.5a1.5 1.5 0 0 1-1.5 1.5H3a2 2 0 1 1 .1-3.998.5.5 0 0 0 .509-.375A3.502 3.502 0 0 1 7 8zm4.473 3a4.5 4.5 0 0 0-8.72-.99A3 3 0 0 0 3 16h8.5a2.5 2.5 0 0 0 0-5h-.027z"/>
+                        <path d="M11.286 1.778a.5.5 0 0 0-.565-.755 4.595 4.595 0 0 0-3.18 5.003 5.46 5.46 0 0 1 1.055.209A3.603 3.603 0 0 1 9.83 2.617a4.593 4.593 0 0 0 4.31 5.744 3.576 3.576 0 0 1-2.241.634c.162.317.295.652.394 1a4.59 4.59 0 0 0 3.624-2.04.5.5 0 0 0-.565-.755 3.593 3.593 0 0 1-4.065-5.422z"/>
+                    </svg>
+                    <p id="copyright" class="col-lg-6">&copy; Niskayuna Robotics</p>
+                </div>
+            </div>
+        </section>
+        <script src="scripts/about.js"></script>
+    </body>
+</html>
